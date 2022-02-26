@@ -34,7 +34,6 @@ public class StoreTC02 extends BaseClass {
 
 		driver.hideKeyboard();
 
-		// driver.findElement(By.xpath("//*[@text='Female']")).click();
 		driver.findElementById("com.androidsample.generalstore:id/radioFemale").click();
 
 		driver.findElementById("android:id/text1").click();
@@ -46,10 +45,6 @@ public class StoreTC02 extends BaseClass {
 
 		driver.findElementById("com.androidsample.generalstore:id/btnLetsShop").click();
 
-//		driver
-//                .findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()"
-//                + ".resourceId(\"com.androidsample.generalstore:id/rvProductList\")).scrollIntoView("
-//                + "new UiSelector().text(\"Jordan 6 Rings\"));");
 
 		driver.findElement(MobileBy.AndroidUIAutomator(
 				"new UiScrollable(new UiSelector().resourceId(\"com.androidsample.generalstore:id/rvProductList\")).scrollIntoView(new UiSelector().textMatches(\"Jordan 6 Rings\").instance(0))"));
