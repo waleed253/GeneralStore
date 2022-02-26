@@ -83,42 +83,13 @@ public class StoreTC04 extends BaseClass {
 			
 		}
 		
-		// for getting in webview and using web element and getting back in app.
-//		driver.context("WEBVIEW_com.androidsample.generalstore");
-//		driver.findElement(By.name("q")).sendKeys("hello");
-//		driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
-//		driver.pressKey(new KeyEvent(AndroidKey.BACK));		
-//		
-//		switchcontext("WEBVIEW");
-//		String text = driver.findElement(By.xpath("//*[@text='Trending Searches']")).getText();
-//		test.info("text is " + 	text);
+	
 		        
 		
 		test.info("Test Completed.");
 		
 	}
 	
-//	public void switchcontext(String context) 
-//	{
-//		test.info("before switch text is " + 	driver.getContext());
-//		Set<String> context1 =driver.getContextHandles();
-//		
-//		for(String c : context1) 
-//		{
-//			test.info("Available  " + c);
-//			if(c.contains(context)) 
-//			{
-//				driver.context(c);
-//				break;
-//			}
-//		}
-//		test.info("Afer switch text is " + 	driver.getContext());
-//	}
-	
-//	
-//	@AfterTest
-//	public void ConClose() {
-//		driver.quit();
-//	}
+
 
 }
