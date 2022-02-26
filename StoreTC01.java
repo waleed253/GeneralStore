@@ -33,8 +33,7 @@ public class StoreTC01 extends BaseClass {
 
 		driver.hideKeyboard();
 
-		// driver.findElement(By.xpath("//*[@text='Female']")).click(); //
-		// com.androidsample.generalstore:id/radioFemale // //*[@text='Female']
+
 		driver.findElementById("com.androidsample.generalstore:id/radioFemale").click();
 
 		driver.findElementById("android:id/text1").click();
